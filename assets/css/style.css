@@ -11,4 +11,14 @@
      /* background color can be added to html body*/
  }
 
+ hr{
+     border:1.5px solid #cccccc;
+     margin-left:0;
+}
+
+.image-responsive{
+    max-width: 50%;
+    max-height: 40%;
+}
+
 
