@@ -1,0 +1,14 @@
+.navbar-brand{
+    background:#4aaaa5;
+    margin:0;
+    color:#f3f3f3;
+ }
+
+ html,body{
+     margin:0;padding:0;
+     box-sizing: border-box;
+
+     /* background color can be added to html body*/
+ }
+
+
