@@ -4,28 +4,41 @@
     color:#f3f3f3;
  }
 
- .name{
-    background:#4aaaa5;
-    margin:0;
-    color:#f3f3f3;
- }
 
  html,body{
      margin:0;padding:0;
      box-sizing: border-box;
-
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
      /* background color can be added to html body*/
  }
 
- hr{
-     border:1.5px solid #cccccc;
-     margin-left:0;
+
+
+h4,h5{
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+}
+
+/*   appending a pipe symbol after every list item as a seperator*/
+
+ a.divider::after{
+    content: "|";
+    color:#dddddd;
+    /*padding-right:5px;*/
+    padding-left:20px;
+}
+
+.profileImage{
+    height:150px;
+    width:200px;
+    float:left;
+    padding-right:20px;
 }
 
 .image-responsive{
     max-width: 50%;
     max-height: 40%;
 }
+/*for sticky footer .. html was made relative and footer's position was made absolute and body has to have margin-bottom equal to footer height*/
 html{
     position: relative;
     min-height: 100%;
@@ -54,11 +67,20 @@ body{
     background:#4aaaa5;
 }
 
-
+/* added this media query to show the page heading "Madhavi Mullapudi" for the entire row for small screens*/
 @media screen and (max-width:767px) {
 
     .myHeadeing{
       width:100%;
     }
   } 
+
+  /* Added this media query for showing the prifile image for the entire row for small screens below medium size*/
+  @media screen and (max-width:767px)
+  {
+      .profileImage{
+          width: 96%;
+      }
+
+  }
 
