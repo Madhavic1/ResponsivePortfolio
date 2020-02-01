@@ -1,6 +1,7 @@
 # ResponsivePortfolio
 It provides responsive portfolio suitable for all screen types (extra small,small and large size screens).
 ## table of contents
+  * Link to the deployed application
   * Introduction / General Information
   * Languages used
   * Installation
@@ -9,6 +10,8 @@ It provides responsive portfolio suitable for all screen types (extra small,smal
   * Usage
   * Sources to read
   
+  ### Link to the deployed application
+  https://madhavic1.github.io/ResponsivePortfolio/
 
   ### Introducion (Aim of the project) / General Information:
     The main aim of this project is to build a portfolio website. A portfolio is often the first point of contact for employers looking to fill a position or clients in need of a developer to complete a project. A clean and informative portfolio showcases a developer's strongest work and can lead to employment and/or more clients. Geting portfolio, a security blanket , to protect your career and make employers seek you out with a professional website is always a great idea.
