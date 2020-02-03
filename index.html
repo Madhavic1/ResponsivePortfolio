@@ -21,20 +21,20 @@
             background-size: cover;
             color:white;
           }
-        
+/*         
           body {
             display: table;
-          }
+          } */
         
-          .my-block {
+          #my-block {
             text-align: center;
-            display: table-cell;
+            /* display: table-cell; */
             vertical-align: middle;
           }
-          a{
+          /* a{
             color:white;
             border: 1px solid white;
-          }
+          } */
 
           .highlight {
             color: #e31b6d;
@@ -43,12 +43,46 @@
     </head>
     <body>
 
-      
-      
+<!--       
     <div class="my-block">
         <h1>Hello , I'm <span class='highlight'> Madhavi Mullapudi.</span><br>I'm a Full-Stack web developer.</h1><br />
-        <!-- <button type="button" id="view-my-work" class="btn px-3">View My Work <i class="fa fa-arrow-right"></i></button> -->
+         <button type="button" id="view-my-work" class="btn px-3">View My Work <i class="fa fa-arrow-right"></i></button> 
         <a class="p-3 text-white"  id="view-my-work"  href="About.html">View My Work<i class="fa fa-arrow-right ml-2"></i> </a>
+    </div> -->
+
+    <div class="d-flex flex-column flex-md-row align-items-center px-md-4 mb-3 bg-dark shadow-sm">
+      <h5 class="my-0 mr-md-auto   p-3 my-0 bg-info bg-dark myHeadeing text-center font-weight-bold"></h5>
+      <nav class="my-2 my-md-0 mr-md-3 ">
+        <a class="p-2 text-white " href="About.html">About Me </a>
+        <a class="p-2 text-white " href="portfolio.html">Portfolio</a>
+        <a class="p-2 text-white" href="contact.html">Contact</a>
+      </nav>
     </div>
+    <div class="container-fluid d-flex align-items-center justify-content-center h-100 flex-column">
+
+      <div >
+        <h1>Hello , I'm <span class='highlight'> Madhavi Mullapudi.</span><br>I'm a Full-Stack web developer.</h1><br />
+      
+    </div> 
+    <div>
+      <a class="p-3 text-white mx-auto border"  id="view-my-work"  href="About.html">View My Work<i class="fa fa-arrow-right ml-2"></i> </a>
+    </div>
+
+     
+      <!-- <div class="d-table" style="border-collapse: collapse;">
+         <div class="d-table-row border border-primary">
+            <div class="d-table-cell" id="my-block">
+              <h4>Middle Cell</h4>
+              <p>Some text..</p>
+            </div>
+         </div>
+        
+      </div>
+     -->
+
+
+
+     
+   </div>
     </body>
 </html>
