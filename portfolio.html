@@ -1,81 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio</title>
-    <!-- Link to Bootstrap framework-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- link to style sheet-->
-    <link rel="stylesheet" href="assets/css/style.css">
-<style>
 
-</style>
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <meta http-equiv="X-UA-Compatible" content="ie=edge">
+       <title>Portfolio</title>
+       <!-- Link to Bootstrap framework-->
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+              crossorigin="anonymous">
+       <!-- link to style sheet-->
+       <link rel="stylesheet" href="assets/css/style.css">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+       <style>
+              *,
+              *::before,
+              *::after {
+                     box-sizing: border-box;
+              }
+
+              .card {
+                     background-color: #fff;
+                     /* border: 1px solid #eceff1;
+  border-radius: 8px; */
+                     box-shadow: rgba(60, 64, 67, 0.3) 0 1px 2px 0,
+                            rgba(60, 64, 67, 0.15) 0 1px 3px 1px;
+                     margin: 2%;
+                     margin-top: 80px;
+                     padding: 20px;
+                     width: 100%;
+                     overflow: hidden;
+                     position: relative;
+                     float: left;
+              }
+
+              .card::after {
+                     content: " ";
+                     display: block;
+                     clear: both;
+              }
+
+              .clearfix::after {
+                     content: " ";
+                     display: block;
+                     clear: both;
+              }
+
+              body {
+                     background-image: url('assets/images/subtle-background.jpg');
+                     background-size: cover;
+              }
+
+              @media screen and (max-width: 768px) {
+                     .card {
+                            max-width: 100%;
+                     }
+              }
+       </style>
 
 </head>
+
 <body>
        <!-- Responsive nav bar start-->
-              <div class="d-flex flex-column flex-md-row align-items-center px-md-4 mb-3 bg-white border-bottom shadow-sm">
-                     <h5 class="my-0 mr-md-auto  font-weight-normal border p-3 my-0 bg-info myHeadeing text-center text-white font-weight-bold">Madhavi Mullapudi</h5>
-                     <nav class="my-2 my-md-0 mr-md-3">
-                            <a class="p-2 text-dark divider" href="index.html">About Me</a>
-                            <a class="p-2 text-dark divider" href="portfolio.html">Portfolio</a>
-                            <a class="p-2 text-dark" href="contact.html">Contact</a>
-                     </nav>
-              </div>
-           <!-- Responsive nav bar ends-->               
-
-        
-
-           <div class="container-fluid">
-          
-              <div class="row"> <!--content row with border start-->
-                <div class="col-12 col-lg-8">
-        <div class="container  border mt-3 p-2 mb-2" > <!-- main content starts here -->
-
-          
-            <h4 class=" border-bottom  pb-2 mb-2 mt-1 text-info font-weight-bold">Portfolio</h4>
-        
-
-              <div class="row p-5">
-                     <div class="col-lg-6 col-md-6 col-sm-12 col-12    text-center  p-2">
-                            <img src="assets/images/html-css.jfif" class="img-fluid " alt="...">
-                     </div>
-                     <div class="col-lg-6 col-md-6 col-sm-12   col-12 text-center p-2">
-                            <img src="assets/images/Java.png" class="img-fluid" alt="...">
-                     </div>
-                     <div class="col-lg-6 col-md-6 col-sm-12    col-12 text-center p-2">
-                            <img src="assets/images/school.jfif" class="img-fluid " alt="...">
-                     </div>
-                     <div class="col-lg-6 col-md-6 col-sm-12   col-12 text-center p-2">
-                            <a href="https://madhavic1.github.io/CodeQuiz/">
-                                   <img src="assets/images/Quiz-time.jfif" class="img-fluid" alt="...">
-                            </a>
-                     </div>
-                     <div class="col-lg-6 col-md-6 col-sm-12   col-12 text-center p-2">
-                            <a href="https://madhavic1.github.io/Weather-Dashboard/">
-                                   <img src="assets/images/weather-2.jpg" class="img-fluid" width=270 alt="...">
-                            </a>
-                     </div>
-                     
-                     
-
-                     
-
-              </div>
-
-      </div>
-      </div>
-      </div>
-      </div>
-      
-
-      <footer class="footer mt-auto py-3">
-       <div class="container">
-         <span>&copy;copyright</span>
+       <div class="d-flex flex-column flex-md-row align-items-center px-md-4 mb-3 bg-white border-bottom shadow-sm">
+              <h5
+                     class="my-0 mr-md-auto  font-weight-normal border p-3 my-0 bg-info myHeadeing text-center text-white font-weight-bold">
+                     Madhavi Mullapudi</h5>
+              <nav class="my-2 my-md-0 mr-md-3">
+                     <a class="p-2 text-dark divider" href="About.html">About Me</a>
+                     <a class="p-2 text-dark divider" href="portfolio.html">Portfolio</a>
+                     <a class="p-2 text-dark" href="contact.html">Contact</a>
+              </nav>
        </div>
-     </footer>
-    
+       <!-- Responsive nav bar ends-->
+
+
+
+       <div class="container-fluid text-white">
+              <div class="row ">
+                     <div class="col-12">
+                            Portfolio:
+                     </div>
+              </div>
+              <div class="clearfix  row pr-3">
+                     <div class="col-12 col-xs-12 col-sm-3  col-md-3 col-lg-5 ">
+                            <div class="card mr-4 bg-dark text-white h-70" style="width:85%">
+                                   Personal Information:
+                                   <b>Full Name :</b><span> Madhavi Mullapudi </span> <br>
+                                   <b>Phone No # : </b> <span> 425-614-5151</span>
+
+                                   <header>Links : </header>
+
+                                   <h3>Github Profile :</h3>
+
+                                   <a href="https://github.com/Madhavic1/">https://github.com/Madhavic1</a>
+
+                                   <h3>Linked In Profile : </h3>
+
+                                   <a
+                                          href="www.linkedin.com/in/madhavi-mullapudi-b1a71320">www.linkedin.com/in/madhavi-mullapudi-b1a71320</a>
+                            </div>
+                     </div>
+                     <div class=" col-12 col-xs-12 col-sm-8 col-md-7 col-lg-7 ">
+                            <div class="card  bg-dark text-white shadow mr-4">
+                                   <div class="row">
+                                          <div class="col-12">
+                                                 Projects : Please click on each project to see the details
+                                          </div>
+                                   </div>
+
+                                   <div class="row ">
+                                          <div class="col-md-6  text-center p-1">
+                                                 <!-- <a href="https://madhavic1.github.io/CodeQuiz/">
+                                   <img src="assets/images/Quiz-time.jfif" class="img-fluid" alt="Coding Quiz">
+                            </a> -->
+                                                 <a href="#demo1" class="btn btn-primary" data-toggle="collapse"><img
+                                                               src="assets/images/Quiz-time.jfif" class="img-fluid"
+                                                               alt="Coding Quiz"></a>
+                                                 <div id="demo1" class="collapse">
+                                                        Project Title : Code Quiz <br>
+                                                        Click here to see : <a
+                                                               href="https://madhavic1.github.io/CodeQuiz/">Deployed
+                                                               application</a>
+                                                        <br>
+                                                        Click here to open : <a
+                                                               href="https://github.com/Madhavic1/CodeQuiz.git">Github
+                                                               Reposiroty</a>
+                                                        <br>
+                                                        Screenshot of the deployed application:
+                                                        https://github.com/Madhavic1/CodeQuiz.git
+                                                 </div>
+                                          </div>
+
+                                          <div class="col-md-6  text-center p-1">
+                                                 <!-- <a href="https://madhavic1.github.io/CodeQuiz/">
+                                   <img src="assets/images/Quiz-time.jfif" class="img-fluid" alt="Coding Quiz">
+                            </a> -->
+                                                 <a href="#demo2" class="btn btn-primary" data-toggle="collapse"><img
+                                                               src="assets/images/Quiz-time.jfif" class="img-fluid"
+                                                               alt="Coding Quiz"></a>
+                                                 <div id="demo2" class="collapse">
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                                        sed do eiusmod tempor incididunt ut labore et dolore magna
+                                                        aliqua. Ut enim ad minim veniam,
+                                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                                        commodo consequat.
+                                                 </div>
+                                          </div>
+
+                                          <div class="col-md-6  text-center p-1">
+                                                 <!-- <a href="https://madhavic1.github.io/CodeQuiz/">
+                                   <img src="assets/images/Quiz-time.jfif" class="img-fluid" alt="Coding Quiz">
+                            </a> -->
+                                                 <a href="#demo3" class="btn btn-primary" data-toggle="collapse"><img
+                                                               src="assets/images/Quiz-time.jfif" class="img-fluid"
+                                                               alt="Coding Quiz"></a>
+                                                 <div id="demo3" class="collapse">
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                                        sed do eiusmod tempor incididunt ut labore et dolore magna
+                                                        aliqua. Ut enim ad minim veniam,
+                                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                                        commodo consequat.
+                                                 </div>
+                                          </div>
+
+                                          <div class="col-md-6  text-center p-1">
+                                                 <!-- <a href="https://madhavic1.github.io/CodeQuiz/">
+                                   <img src="assets/images/Quiz-time.jfif" class="img-fluid" alt="Coding Quiz">
+                            </a> -->
+                                                 <a href="#demo4" class="btn btn-primary" data-toggle="collapse"><img
+                                                               src="assets/images/Quiz-time.jfif" class="img-fluid"
+                                                               alt="Coding Quiz"></a>
+                                                 <div id="demo4" class="collapse">
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                                        sed do eiusmod tempor incididunt ut labore et dolore magna
+                                                        aliqua. Ut enim ad minim veniam,
+                                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                                        commodo consequat.
+                                                 </div>
+                                          </div>
+
+                                          <div class="col-md-6  text-center p-1">
+                                                 <!-- <a href="https://madhavic1.github.io/CodeQuiz/">
+                                   <img src="assets/images/Quiz-time.jfif" class="img-fluid" alt="Coding Quiz">
+                            </a> -->
+                                                 <a href="#demo5" class="btn btn-primary" data-toggle="collapse"><img
+                                                               src="assets/images/Quiz-time.jfif" class="img-fluid"
+                                                               alt="Coding Quiz"></a>
+                                                 <div id="demo5" class="collapse">
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                                        sed do eiusmod tempor incididunt ut labore et dolore magna
+                                                        aliqua. Ut enim ad minim veniam,
+                                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                                        commodo consequat.
+                                                 </div>
+                                          </div>
+
+                                   </div>
+
+                            </div>
+                            <!--after this -->
+                     </div>
+              </div>
+
+              <footer class="footer mt-auto py-3">
+                     <div class="container">
+                            <span>&copy;copyright</span>
+                     </div>
+              </footer>
+
 </body>
+
 </html>
