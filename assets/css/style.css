@@ -18,6 +18,9 @@ h4,h5{
     font-family: 'Georgia', Times, 'Times New Roman', serif;
 }
 
+a.divider{
+    text-decoration: none
+}
 /*   appending a pipe symbol after every list item as a seperator*/
 
  a.divider::after{
@@ -26,6 +29,7 @@ h4,h5{
     /*padding-right:5px;*/
     padding-left:15px;
 }
+
 
 .profileImage{
     height:200px;
@@ -63,9 +67,18 @@ body{
 
 }
 
-.btn{
-    /* background:#4aaaa5; */
-}
+h4{
+    border-bottom: 1px solid lightslategray;
+  }
+
+  .input-color
+  {
+      background-color: antiquewhite;
+  }
+
+.highlight {
+    color: #e31b6d;
+  }
 
 /* added this media query to show the page heading "Madhavi Mullapudi" for the entire row for small screens*/
 @media screen and (max-width:767px) {
