@@ -1,86 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Home Page</title>
-        <!-- Link to Bootstrap framework-->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <!-- link to style sheet-->
-        <link rel="stylesheet" href="assets/css/style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Portfolio</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+<body id="bg-img">
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <header>
+        <div class="menu-btn">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+        </div>
 
-        <style>
-          html,
-          body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            background-image: url('assets/images/filler.png');
-            background-size: cover;
-            color:white;
-          }
-/*         
-          body {
-            display: table;
-          } */
-        
-          #my-block {
-            text-align: center;
-            /* display: table-cell; */
-            vertical-align: middle;
-          }
-          /* a{
-            color:white;
-            border: 1px solid white;
-          } */
-
-        
-        </style>
-    </head>
-    <body>
-
-<!--       
-    <div class="my-block">
-        <h1>Hello , I'm <span class='highlight'> Madhavi Mullapudi.</span><br>I'm a Full-Stack web developer.</h1><br />
-         <button type="button" id="view-my-work" class="btn px-3">View My Work <i class="fa fa-arrow-right"></i></button> 
-        <a class="p-3 text-white"  id="view-my-work"  href="About.html">View My Work<i class="fa fa-arrow-right ml-2"></i> </a>
-    </div> -->
-
-    <div class="d-flex flex-column flex-md-row align-items-center px-md-4 mb-3 bg-dark shadow-sm">
-      <h5 class="my-0 mr-md-auto   p-3 my-0 bg-info bg-dark myHeadeing text-center font-weight-bold"></h5>
-      <nav class="my-2 my-md-0 mr-md-3 ">
-        <a class="p-2 text-white " href="About.html">About Me </a>
-        <a class="p-2 text-white " href="portfolio.html">Portfolio</a>
-        <a class="p-2 text-white" href="contact.html">Contact</a>
-      </nav>
-    </div>
-    <div class="container-fluid d-flex align-items-center justify-content-center h-100 flex-column">
-
-      <div >
-        <h1>Hello , I'm <span class='highlight'> Madhavi Mullapudi.</span><br>I'm a Full-Stack web developer.</h1><br />
-      
-    </div> 
-    <div>
-      <a class="p-3 text-white mx-auto border"  id="view-my-work"  href="portfolio.html">View My Work<i class="fa fa-arrow-right ml-2"></i> </a>
-    </div>
-
-     
-      <!-- <div class="d-table" style="border-collapse: collapse;">
-         <div class="d-table-row border border-primary">
-            <div class="d-table-cell" id="my-block">
-              <h4>Middle Cell</h4>
-              <p>Some text..</p>
+        <nav class="menu">
+            <div class="menu-branding">
+                <div class="portrait"></div>
             </div>
-         </div>
+                <ul class="menu-nav">
+                    <li class="nav-item current">
+                        <a href="./index.html" class="nav-link ">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./About.html" class="nav-link">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./portfolio.html" class="nav-link">My Work</a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a href="./contact.html" class="nav-link">How to Reach me</a>
+                    </li>
+                </ul>
+                
+                </nav>
+    </header>
+    <main id="home">
+        <h1 class="lg-heading">
+          Madhavi
+          <span class="text-secondary">Mullapudi</span>
+        </h1>
+        <h2 class="sm-heading">
+            Full Stack Web Developer
+        </h2>
         
-      </div>
-     -->
-
-
-
-     
-   </div>
-    </body>
+        <div class="icons">
+            <a href="https://github.com/Madhavic1/" target="_blank" title="Github">
+                <i class="fab fa-github fa-2x"></i>
+              </a>
+           <a href="https://www.linkedin.com/in/madhavi-mullapudi-b1a71320" target="_blank" title="LinkedIn">
+            <i class="fab fa-linkedin fa-2x"></i>
+          </a>
+          <a href="Madhavi-Mullapudi-Resume.pdf" target="_blank" title="Resume">
+            <i class="fa fa-file-pdf-o fa-2x"></i>
+        </a>
+        </div>
+      </main>
+    <script src="./js/main.js"></script>
+</body>
 </html>

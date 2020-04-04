@@ -6,253 +6,182 @@
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
        <meta http-equiv="X-UA-Compatible" content="ie=edge">
        <title>Portfolio</title>
-       <!-- Link to Bootstrap framework-->
        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
               integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
               crossorigin="anonymous">
-       <!-- link to style sheet-->
-       <link rel="stylesheet" href="assets/css/style.css">
+       <link rel="stylesheet" href="./css/main.css">
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-       <style>
-              *,
-              *::before,
-              *::after {
-                     box-sizing: border-box;
-              }
-
-              .card {
-                     background-color: #fff;
-                     background-image: url('assets/images/dark-grey.jpg');
-                     background-size: cover;
-                     box-shadow: rgba(60, 64, 67, 0.3) 0 1px 2px 0,
-                            rgba(60, 64, 67, 0.15) 0 1px 3px 1px;
-                     margin: 2%;
-                     margin-top: 80px;
-                     padding: 20px;
-                     width: 100%;
-                     overflow: hidden;
-                     position: relative;
-                     float: left;
-              }
-
-              .card::after {
-                     content: " ";
-                     display: block;
-                     clear: both;
-              }
-
-              .clearfix::after {
-                     content: " ";
-                     display: block;
-                     clear: both;
-              }
-
-              body {
-                     background-image: url('assets/images/subtle-background.jpg');
-                     background-size: cover;
-              }
-
-              @media screen and (max-width: 768px) {
-                     .card {
-                            max-width: 100%;
-                     }
-              }
-       </style>
-
+       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+       crossorigin="anonymous">
 </head>
 
 <body>
-       <!-- Responsive nav bar start-->
-       <div class="d-flex flex-column flex-md-row align-items-center px-md-4 mb-3 bg-dark shadow-sm">
-              <h5
-                     class="my-0 mr-md-auto rounded-pill font-weight-normal  p-3 my-0 bg-info myHeadeing text-center text-white font-weight-bold">
-                     Madhavi Mullapudi</h5>
-              <nav class="my-2 my-md-0 mr-md-3">
-                     <a class="p-2 text-info divider" href="About.html">About Me</a>
-                     <a class="p-2 text-info divider" href="portfolio.html">Portfolio</a>
-                     <a class="p-2 text-info" href="contact.html" style="text-decoration: none;">Contact</a>
+       <header>
+              <div class="menu-btn">
+                     <div class="btn-line"></div>
+                     <div class="btn-line"></div>
+                     <div class="btn-line"></div>
+              </div>
+              <nav class="menu">
+                     <div class="menu-branding">
+                            <div class="portrait"></div>
+                     </div>
+                     <ul class="menu-nav">
+                            <li class="nav-item">
+                                   <a href="index.html" class="nav-link">
+                                          Home
+                                   </a>
+                            </li>
+                            <li class="nav-item">
+                                   <a href="About.html" class="nav-link">
+                                          About Me
+                                   </a>
+                            </li>
+                            <li class="nav-item current">
+                                   <a href="portfolio.html" class="nav-link">
+                                          My Work
+                                   </a>
+                            </li>
+                            <li class="nav-item">
+                                   <a href="contact.html" class="nav-link">
+                                          How To Reach Me
+                                   </a>
+                            </li>
+                     </ul>
               </nav>
-       </div>
+       </header>
+
        <!-- Responsive nav bar ends-->
+       <div class="container  text-white shadow-lg mb-5">
 
-
-
-       <div class="container-fluid text-white">
-              <div class="row ">
+              <div class="row mt-2 pt-3">
                      <div class="col-12">
-                            <h4 class=" text-info font-weight-bold">Portfolio</h4>
+                            <h1 class="lg-heading text-md-left" id="portfolio-heading">
+                                   My
+                                   <span class="text-warning">Work</span>
+                            </h1>
                      </div>
               </div>
-              <div class="clearfix  row pr-3">
-                     <div class="col-12 col-xs-12 col-sm-3  col-md-5 col-lg-5 ">
-                            <div class="card mr-4 bg-dark text-white h-70" style="width:85%">
-                                   <div class="row ">
-                                          <div class="col-12">
-                                                 <h3 class="text-info"> Personal Information:</h3>
-                                                 <p style="font-weight: bold;">Full Name :<span
-                                                               style="font-weight: normal;"> Madhavi Mullapudi </span>
-                                                 </p>
-                                                 <p style="font-weight: bold;">Email :<span
-                                                               style="font-weight: normal;">madhavi.0108@gmail.com</span>
-                                                 </p>
-                                                 <p style="font-weight: bold;">Phone No # :<span
-                                                               style="font-weight: normal;"> xxx-xxx-xxxx</span></p>
-                                          </div>
-                                   </div>
-                                   <div class="row ">
-                                          <div class="col-12">
-                                                 <h3 class="text-info"> Links : </h3>
+              <div class="row p-2 ">
+                     <div class="col-12">
+                            <h2 class="sm-heading display-6">
+                                   Check out some of my projects...
+                            </h2>
+                            <small>click on each project to see the details</small>
+                     </div>
+              </div>
 
-                                                 <li><a href="MadhaviMullapudiResume.pdf" class="text-white">Resume in
-                                                               PDF format</a></li>
-                                                 <li><a href="https://github.com/Madhavic1/" class="text-white">Github
-                                                               Profile </a></li>
-                                                 <li><a href="www.linkedin.com/in/madhavi-mullapudi-b1a71320"
-                                                               class="text-white">Linked In Profile </a></li>
 
-                                          </div>
-                                   </div>
+              <div class="row  mb-3">
+
+                     <div class="col-md-3  text-center p-1">
+                            <a href="#demo1" class="btn btn-warning p-0" data-toggle="collapse"><img src="img/code_quiz.jpg"
+                                          class="img-fluid" alt="Coding Quiz" style="width: 270px;height:200px;"></a>
+                            <div id="demo1" class="collapse">
+                                   <span class="h5"> Code Quiz</span>
+                                   <br>
+                                   <a href="https://madhavic1.github.io/CodeQuiz/" class="text-warning">Deployed
+                                          application</a>
+                                   <br>
+                                   <a href="https://github.com/Madhavic1/CodeQuiz.git" class="text-warning">Github
+                                          Reposiroty</a>
+                                   <br>
+                                   <a href="img/Coding-quiz.png" class="text-warning">Screenshot</a>
                             </div>
                      </div>
-                     <div class=" col-12 col-xs-12 col-sm-8 col-md-7 col-lg-7 ">
-                            <div class="card  bg-dark text-white shadow mr-4">
-                                   <div class="row">
-                                          <div class="col-12">
-                                                 <h3 class="text-info">Projects : </h3 class="text-info">
-                                                 <p style="font-weight: lighter;">Please click on each project to see
-                                                        the details</p>
-                                          </div>
-                                   </div>
-
-                                   <div class="row ">
-                                          <div class="col-md-6  text-center p-1">
-                                                 <a href="#demo1" class="btn btn-info" data-toggle="collapse"><img
-                                                               src="assets/images/Quiz-time.jfif" class="img-fluid"
-                                                               alt="Coding Quiz" style="width: 270px;height:200px;"></a>
-                                                 <div id="demo1" class="collapse">
-                                                        Project Title :<span class="text-info"> Code Quiz</span>
-                                                        <br>
-                                                        Click here to see : <a
-                                                               href="https://madhavic1.github.io/CodeQuiz/">Deployed
-                                                               application</a>
-                                                        <br>
-                                                        Click here to open : <a
-                                                               href="https://github.com/Madhavic1/CodeQuiz.git">Github
-                                                               Reposiroty</a>
-                                                        <br>
-                                                        <a href="assets/images/Coding-quiz.png">Screenshot of the
-                                                               application</a>
-
-
-                                                 </div>
-                                          </div>
-
-                                          <div class="col-md-6  text-center p-1">
-                                                 <!--    -->
-                                                 <a href="#demo2" class="btn btn-info" data-toggle="collapse"><img
-                                                               src="assets/images/weather-sun-cloud.jpg"
-                                                               class="img-fluid" alt="Weather Dashboard"
-                                                               style="width: 270px;height:200px;"></a>
-                                                 <div id="demo2" class="collapse">
-
-                                                        Project Title :<span class="text-info">Weather Dashboard</span>
-                                                        <br>
-                                                        Click here to see : <a
-                                                               href="https://madhavic1.github.io/Weather-Dashboard/">Deployed
-                                                               application</a>
-                                                        <br>
-                                                        Click here to open : <a
-                                                               href="https://github.com/Madhavic1/Weather-Dashboard.git">Github
-                                                               Reposiroty</a>
-                                                        <br>
-                                                        <a href="assets/images/weather-dashboard.png">Screenshot of the
-                                                               application</a>
-                                                 </div>
-                                          </div>
-
-                                          <div class="col-md-6  text-center p-1">
-
-                                                 <a href="#demo3" class="btn btn-info" data-toggle="collapse"><img
-                                                               src="assets/images/medical-background.jpg"
-                                                               class="img-fluid" alt="Find My Doctor"
-                                                               style="width: 270px;height:200px;"></a>
-                                                 <div id="demo3" class="collapse">
-                                                        Project Title :<span class="text-info">Find My Doctor
-                                                        </span><br>
-                                                        Click here to see : <a
-                                                               href="https://sarahm16.github.io/FindMyDoctor/">Deployed
-                                                               application</a>
-                                                        <br>
-                                                        Click here to open : <a
-                                                               href="https://github.com/sarahm16/FindMyDoctor.git">Github
-                                                               Reposiroty</a>
-                                                        <br>
-                                                        <a href="assets/images/Find-my-doctor.png">Screenshot of the
-                                                               application</a>
-                                                 </div>
-                                          </div>
-
-
-                                          <div class="col-md-6  text-center p-1">
-
-                                                 <a href="#demo5" class="btn btn-info" data-toggle="collapse"><img
-                                                               src="assets/images/day-scheduler.png"
-                                                               style="width: 270px;height:200px;" class="img-fluid"
-                                                               alt="Coding Quiz" style="width: 270px;height:200px;"></a>
-                                                 <div id="demo5" class="collapse">
-                                                        Project Title :<span class="text-info"> Work Day Scheduler
-                                                        </span><br>
-                                                        Click here to see : <a
-                                                               href="https://madhavic1.github.io/Day-Planner/">Deployed
-                                                               application</a>
-                                                        <br>
-                                                        Click here to open : <a
-                                                               href="https://github.com/Madhavic1/Day-Planner.git">Github
-                                                               Reposiroty</a>
-                                                        <br>
-                                                        <a href="assets/images/Day-planner.png">Screenshot of the
-                                                               application</a>
-                                                 </div>
-                                          </div>
-
-                                          <div class="col-md-6  text-center p-1">
-
-                                                 <a href="#demo4" class="btn btn-info" data-toggle="collapse"><img
-                                                               src="assets/images/password-key.jpg" class="img-fluid"
-                                                               alt="Password Generator"
-                                                               style="width: 270px;height:200px;"></a>
-                                                 <div id="demo4" class="collapse">
-                                                        Project Title : <span class="text-info">Password Generator
-                                                        </span><br>
-                                                        Click here to see : <a
-                                                               href="https://madhavic1.github.io/PasswordGenerator/">Deployed
-                                                               application</a>
-                                                        <br>
-                                                        Click here to open : <a
-                                                               href="https://github.com/Madhavic1/PasswordGenerator.git">Github
-                                                               Reposiroty</a>
-                                                        <br>
-                                                        <a href="assets/images/password-generator.png">Screenshot of the
-                                                               application</a>
-                                                 </div>
-                                          </div>
-
-                                   </div>
-
+                     <div class="col-md-3  text-center p-1">
+                            <!--    -->
+                            <a href="#demo2" class="btn btn-warning p-0" data-toggle="collapse"><img
+                                          src="img/real_weather2.jpg" class="img-fluid" alt="Weather Dashboard"
+                                          style="width: 270px;height:200px;"></a>
+                            <div id="demo2" class="collapse">
+                                   <span class="h5">Weather Dashboard</span>
+                                   <br>
+                                   <a href="https://madhavic1.github.io/Weather-Dashboard/" class="text-warning">Deployed
+                                          application</a>
+                                   <br>
+                                   <a href="https://github.com/Madhavic1/Weather-Dashboard.git" class="text-warning">Github
+                                          Reposiroty</a>
+                                   <br>
+                                   <a href="img/weather-dashboard.png" class="text-warning">Screenshot</a>
                             </div>
-                            <!--after this -->
+                     </div>
+                     <div class="col-md-3  text-center p-1">
+
+                            <a href="#demo3" class="btn btn-warning p-0" data-toggle="collapse"><img
+                                          src="img/find_doctor.jpg" class="img-fluid" alt="Find My Doctor"
+                                          style="width: 270px;height:200px;"></a>
+                            <div id="demo3" class="collapse">
+                                   <span class="h5">Find My Doctor</span>
+                                   <br>
+                                   <a href="https://sarahm16.github.io/FindMyDoctor/" class="text-warning">Deployed
+                                          application</a>
+                                   <br>
+                                   <a href="https://github.com/sarahm16/FindMyDoctor.git" class="text-warning">Github
+                                          Reposiroty</a>
+                                   <br>
+                                   <a href="img/Find-my-doctor.png" class="text-warning">Screenshot</a>
+                            </div>
+                     </div>
+                     <div class="col-md-3  text-center p-1">
+                            <a href="#demo5" class="btn btn-warning p-0" data-toggle="collapse"><img
+                                          src="img/day_scheduler.jpg" style="width: 270px;height:200px;"
+                                          class="img-fluid" alt="Day Scheduler" style="width: 270px;height:200px;"></a>
+                            <div id="demo5" class="collapse">
+                                   <span class="h5"> Work Day Scheduler</span>
+                                   <br>
+                                   <a href="https://madhavic1.github.io/Day-Planner/" class="text-warning">Deployed
+                                          application</a>
+                                   <br>
+                                   <a href="https://github.com/Madhavic1/Day-Planner.git" class="text-warning">Github
+                                          Reposiroty</a>
+                                   <br>
+                                   <a href="img/Day-planner.png" class="text-warning">Screenshot</a>
+                            </div>
+                     </div>
+                     <div class="col-md-3  text-center p-1">
+                            <a href="#demo4" class="btn btn-warning p-0" data-toggle="collapse"><img src="img/password.jpg"
+                                          class="img-fluid" alt="Password Generator"
+                                          style="width: 270px;height:200px;"></a>
+                            <div id="demo4" class="collapse">
+                                   <span class="h5">Password Generator</span>
+                                   <br>
+                                   <a href="https://madhavic1.github.io/PasswordGenerator/" class="text-warning">Deployed
+                                          application</a>
+                                   <br>
+                                   <a href="https://github.com/Madhavic1/PasswordGenerator.git" class="text-warning">Github
+                                          Reposiroty</a>
+                                   <br>
+                                   <a href="img/password-generator.png" class="text-warning">Screenshot</a>
+                            </div>
+                     </div>
+                     <div class="col-md-3  text-center p-1">
+                            <a href="#demo6" class="btn btn-warning p-0" data-toggle="collapse"><img src="img/developer.jpg"
+                                          class="img-fluid" alt="Devhire"
+                                          style="width: 270px;height:200px;"></a>
+                            <div id="demo6" class="collapse">
+                                   <span class="h5">DevHire Portal</span>
+                                   <br>
+                                   <a href="https://immense-brushlands-05326.herokuapp.com/" class="text-warning">Deployed
+                                          application</a>
+                                   <br>
+                                   <a href="https://github.com/iskona/DevHire.git" class="text-warning">Github
+                                          Reposiroty</a>
+                                   <br>
+                                   <a href="img/devhire.JPG" class="text-warning">Screenshot</a>
+                            </div>
                      </div>
               </div>
        </div>
-
-       <footer class="footer mt-auto py-3">
+<br>
+       <footer class="footer">
               <div class="container">
-                     <span>&copy;copyright</span>
+                <p class="text-white text-center">Copyright &copy; 2020</p>
               </div>
-       </footer>
-
+            </footer>
+            <script src="./js/main.js"></script>
 </body>
 
 </html>
